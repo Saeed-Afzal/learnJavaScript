@@ -29,4 +29,27 @@
 //     return total = a+b;
 // }
 // console.log(sum(5,55));
-
+//ES6
+//Let vs Const
+//LET
+// function bioData(){
+//     // let myName = "Saeed";
+//     console.log(myName);
+//     if(true){
+//         let myName = "Muhammad Saeed"; 
+//         console.log(myName);
+//     }
+//     console.log(myName);
+// }
+// bioData();
+//CONST
+// function bioData(){
+//     // const myName = "Saeed";
+//     console.log(myName);
+//     if(true){
+//         const myName = "Muhammad Saeed"; 
+//         console.log(myName);
+//     }
+//     console.log(myName);
+// }
+// bioData();
