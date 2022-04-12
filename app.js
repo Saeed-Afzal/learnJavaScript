@@ -59,3 +59,20 @@
 //     //     console.log(tableOf + " * " + num + " = " + tableOf * num); // this is replaced by down line
 //     console.log(`${tableOf} * ${num} = ${tableOf * num}`);
 // }
+// Default Parameter
+// function mult(a,b=5){
+//     return a*b;
+// }
+// console.log(mult(5));
+//Arrow Function start
+//1. Normal Function
+// console.log(sum());
+// function sum(){
+//     let a=5,b=5;
+//     let sum = a+b;
+//     return `The sum of two numbes is ${sum}`
+// }
+//2. Arrow Function
+// const sum = () =>  `The sum of two numbes is ${(a=5)+(b=5)}`
+// //if only one line then no need to add return keyword and curly brackets
+// console.log(sum());
