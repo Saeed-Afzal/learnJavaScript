@@ -53,3 +53,9 @@
 //     console.log(myName);
 // }
 // bioData();
+//Template Literals
+// for(var num= 1 ; num<=10; num++){
+//     let tableOf = 8;
+//     //     console.log(tableOf + " * " + num + " = " + tableOf * num); // this is replaced by down line
+//     console.log(`${tableOf} * ${num} = ${tableOf * num}`);
+// }
