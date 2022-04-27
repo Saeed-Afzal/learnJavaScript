@@ -76,3 +76,65 @@
 // const sum = () =>  `The sum of two numbes is ${(a=5)+(b=5)}`
 // //if only one line then no need to add return keyword and curly brackets
 // console.log(sum());
+//for in
+// var arr = ['apple','banana','orange','mango']
+// for(elements in arr){
+//     console.log(elements); // return index
+// }
+//for of
+// for(elements of arr){
+//     console.log(elements); //return array
+// }
+//forEach
+// arr.forEach(function(element,index,array){
+//     console.log(index );
+// })
+//splice
+// var months = ['Jan','Feb','Mar']
+// // var newmonths = months.splice(2,0,'Apr')
+// var newmonths = months.splice(months.length,0,'Apr') //
+// console.log(months);
+// var months = ['jan', 'feb', 'mar','apr','may','jun']
+//update array value
+//sol1
+// var indexOfMonths = months.indexOf('mar')
+// console.log(indexOfMonths); //index mil jaega array ka
+// var updatemonths = months.splice(indexOfMonths,1,'MAR'); //us index se wo update hojaega eg: mar => MAR
+// console.log(months);
+//sol2
+// var indexOfMonths = months.indexOf('mar')
+// if(indexOfMonths != -1 ){
+// var updatemonths = months.splice(indexOfMonths,1,'MAR'); //us index se wo update hojaega eg: mar => MAR
+// console.log(months);
+// }
+// else{
+//     console.log("No such data found");
+// }
+//maps in array
+// var months = ['jan', 'feb', 'mar','apr','may','jun']
+// var newArr = months.map((element,index,array)=>{
+//     return `index: ${index} values: ${element}`
+// })
+// console.log(newArr);
+// let arr = [25,36,81,64]
+// // console.log(arr);
+// let newarr = arr.map((element)=>{
+//     return Math.sqrt(element)
+// })
+// console.log(newarr);
+//multiply by 2 and get greater than 10
+// let arr = [2,3,4,6,8]
+// let newarr = arr.map((element)=>{
+//     return element*2
+// }).filter((element)=>{
+//     return element >10
+// })
+// console.log(newarr);
+//reduce in array
+//takes 4 arguments accumulator, element, index,array
+// let arr = [5,6,3]
+
+// let newarr = arr.reduce((accumulator,element,index,array)=>{
+//     return accumulator += element
+// })
+// console.log(newarr);
