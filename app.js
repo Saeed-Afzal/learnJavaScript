@@ -138,3 +138,24 @@
 //     return accumulator += element
 // })
 // console.log(newarr);
+
+
+// const kvArray = [{ key: 1, value: 10 },
+//     { key: 2, value: 20 },
+//     { key: 3, value: 30 }];
+// // const reformattedArray = kvArray.map(({ key, value}) => ({ [key]: value }));
+// console.log(reformattedArray);
+//find maximum value 
+// var arr = [42,13,34,8, -9, 3];
+// function max(array, selector) {
+//   var val = array[0];   
+//   for (var i = 1; i < array.length; i++) {
+//     if (selector == "Max") {
+//       if (array[i] > val) {
+//         val = array[i];
+//       }
+//     }
+//   }
+//   return val;
+// }
+// console.log(max(arr))
