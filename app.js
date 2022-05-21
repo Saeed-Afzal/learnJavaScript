@@ -159,3 +159,19 @@
 //   return val;
 // }
 // console.log(max(arr))
+// Trim Strings
+// var str = "      Hello        World";
+// var trimStr = str.trim() // remove spaces
+// console.log(str);
+// console.log(trimStr);
+//splits string
+// var str = "a b c";
+// console.log(str.split(' '));
+//Date and Time
+
+//DOM(Document Obejct Model) and BOM(Browser Object Model)
+//put in any website
+// alert(location.href)
+// if(confirm("Want to visit Thapa Youtube Chanel")){
+//     location.href = "https://www.youtube.com";
+// }
