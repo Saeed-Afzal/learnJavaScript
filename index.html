@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <p id="demo"></p>
+    <!-- <p id="demo"></p> -->
+    <!-- set Timeout -->
+    <!-- <p>You want to see my name</p>
+    <p id="showMyName"></p>
+    <button id="btn">Click Me</button>
+    <script>
+        const myName = document.querySelector('#showMyName');
+        const btn = document.querySelector('#btn');
+
+        const showMyName = () =>{
+            myName.innerHTML = 'Loading';
+
+            setTimeout(()=>{
+                myName.innerHTML = 'Saeed';
+            },5000)
+        }
+        btn.addEventListener('click', showMyName);
+    </script> -->
+    <!-- set Timeout -->
+    <!-- set interval -->
+    <p>You have to stop me in 5sec</p>
+    <p id="stopMe"></p>
+    <button id="btn">Click Me</button>
+    <button id="btn1">Stop Me</button>
+
+    <script>
+        const stopMe = document.querySelector('#stopMe');
+        const btn = document.querySelector('#btn');
+        const btn1 = document.querySelector('#btn1');
+        let timeref; // use to stop time interval
+
+        const showMeTime = () => {
+            let num = 0;
+            stopMe.innerHTML = 'Loading';
+
+          timeref = setInterval(() => {
+                stopMe.innerHTML = `${num}`;
+                num++;
+            }, 1000)
+        }
+        btn.addEventListener('click', showMeTime);
+
+        // stop time
+        btn1.addEventListener('click',()=>{
+            clearInterval(timeref);
+        })
+    </script>
+    <!-- set interval -->
+
 </body>
 <script src="app.js"></script>
 <script>
     var js = 10;
-    js *=5;
-    document.getElementById("demo").innerHTML = js;
+    js *= 5;
+    // document.getElementById("demo").innerHTML = js;
 </script>
+
 </html>

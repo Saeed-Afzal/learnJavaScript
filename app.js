@@ -175,3 +175,9 @@
 // if(confirm("Want to visit Thapa Youtube Chanel")){
 //     location.href = "https://www.youtube.com";
 // }
+
+
+//time intervals
+//setTimeout(function,millisecond): execute a function after waiting
+//setInterval(function,millisecond): same but repeat the execution of function
+//visit index.html
