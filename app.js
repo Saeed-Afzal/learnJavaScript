@@ -181,3 +181,22 @@
 //setTimeout(function,millisecond): execute a function after waiting
 //setInterval(function,millisecond): same but repeat the execution of function
 //visit index.html
+
+
+//objects and this keyword
+//this: current context ko get krta hai, agr object me chalen gay to us k andr ki properties ko get krega e.g
+
+// const obj = {
+//     myName: {
+//         myFirstName: "Muhammad",
+//         myMiddleName: "Saeed",
+//     },
+//     myAge: 23,
+//     //this keyword arrow func me use nhi hoga
+//     getDetail() {
+//         console.log(`My name is ${this.myName.myFirstName} ${this.myName.myMiddleName} and my age is ${this.myAge}`);
+//     }
+// }
+
+// obj.getDetail();
+//objects and this keyword
