@@ -200,3 +200,56 @@
 
 // obj.getDetail();
 //objects and this keyword
+
+//ES6
+
+//array destructuring
+// const arr = ['Saeed', "Afzal", 23];
+
+// const [myName, myFName, myAge] = arr;
+// console.log(myName); //print saeed
+//array destructuring
+//object destructuring
+// const obj = {
+//     myName: 'Saeed',
+    
+//     myAge: 23,
+// }
+// let {myName, myAge} = obj;
+
+// console.log(myAge);
+
+//object destructuring
+
+//dynamic data in object
+// let myName = 'saeed';
+// const myBio = {
+//     [myName] : "hello ", // square brackets se is key ka name change hojae ga
+//     [20 + 6] : "is my age", // key ka name 20 + 6 = 26 hojaega
+// }
+// console.log(myBio);
+//dynamic data in object
+
+//same name and value objects
+// var myName = 'saeed';
+// var age = 23;
+// const obj = {
+//     myName,
+//     age
+// }
+// console.log(obj);
+// //same name and value objects
+
+//spread operators
+// const colors = ['red', 'green', 'blue']
+// const morecolors = [...colors, 'yellow','pink']
+// console.log(morecolors);
+//spread operators
+
+//array includes
+const colors = ['red', 'green', 'blue']
+const isPresent = colors.includes('red') // print true
+console.log(isPresent);
+//array includes
+
+
