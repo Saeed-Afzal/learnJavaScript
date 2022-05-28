@@ -111,7 +111,7 @@
 //     console.log("No such data found");
 // }
 //maps in array
-// var months = ['jan', 'feb', 'mar','apr','may','jun']
+// var months = ['jan', 'feb', 'mar', 'apr','may','jun']
 // var newArr = months.map((element,index,array)=>{
 //     return `index: ${index} values: ${element}`
 // })
@@ -247,9 +247,25 @@
 //spread operators
 
 //array includes
-const colors = ['red', 'green', 'blue']
-const isPresent = colors.includes('red') // print true
-console.log(isPresent);
+// const colors = ['red', 'green', 'blue']
+// const isPresent = colors.includes('red') // print true
+// console.log(isPresent);
 //array includes
 
 
+//capture phase vs bubble phase
+//capture phase : main div aur sub div agr subdiv pr click kren to phele maindiv chale phr sub div
+//bubble phase : main div aur sub div agr subdiv pr click kren to phele subdiv chale phr maindiv
+//bydefault bubble phase hota hai
+const maindiv = () =>{
+    alert("hello main")
+}
+const subdiv = () =>{
+    alert("hello sub"),
+    event.stopPropagation(); // jb srf subdiv chalana ho
+}
+
+maindiv.addEventListner('click', maindiv,true); // true se capture phase active hojaega
+maindiv.addEventListner('click', maindiv,true);
+
+//capture phase vs bubble phase
