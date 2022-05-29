@@ -257,15 +257,33 @@
 //capture phase : main div aur sub div agr subdiv pr click kren to phele maindiv chale phr sub div
 //bubble phase : main div aur sub div agr subdiv pr click kren to phele subdiv chale phr maindiv
 //bydefault bubble phase hota hai
-const maindiv = () =>{
-    alert("hello main")
-}
-const subdiv = () =>{
-    alert("hello sub"),
-    event.stopPropagation(); // jb srf subdiv chalana ho
-}
+// const maindiv = () =>{
+//     alert("hello main")
+// }
+// const subdiv = () =>{
+//     alert("hello sub"),
+//     event.stopPropagation(); // jb srf subdiv chalana ho
+// }
 
-maindiv.addEventListner('click', maindiv,true); // true se capture phase active hojaega
-maindiv.addEventListner('click', maindiv,true);
+// maindiv.addEventListner('click', maindiv,true); // true se capture phase active hojaega
+// maindiv.addEventListner('click', maindiv,true);
 
 //capture phase vs bubble phase
+
+//callback: 1 function dosre me as an argument use ho 
+// higher order function: calculator js me sare func as argument use hon
+// const add = (a,b) => {
+//     return a+b;
+// }
+// const sub = (a,b) => {
+//     return a-b;
+// }
+
+// // console.log(add(5,4));
+// //operator as as argument use horha hai 
+// const calculator = (num1,num2,operator) => {
+//     return operator(num1,num2);
+// }
+
+// console.log(calculator(5,5,add));
+// console.log(calculator(6,5,sub));
