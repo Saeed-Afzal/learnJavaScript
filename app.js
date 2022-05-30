@@ -287,3 +287,16 @@
 
 // console.log(calculator(5,5,add));
 // console.log(calculator(6,5,sub));
+
+//Closures : innerfun outerfun ka data store krleta hai
+// const outerFun = (a) => {
+//     const b = 6;
+//     const innerFun = ()=>{
+//         let sum = a+b;
+//         console.log(`The sum of a and b is ${sum}`);
+//     }
+//     innerFun();
+// }
+// outerFun(5);
+
+//Synchronous JS Prog : 
