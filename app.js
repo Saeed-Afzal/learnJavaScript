@@ -351,3 +351,19 @@
 
 // sum(5)(3)(8)
 //Function Currying
+
+//Callback hell: 1 timeout k andr 1 aur phr 1 aur ....
+
+// const msg = () => {
+//     setTimeout(()=>{
+//         console.log('1st work is done');
+//         setTimeout(()=>{
+//             console.log('2nd work is done');
+//             setTimeout(()=>{
+//                 console.log('3rd work is done');
+//             },1000)
+//         },1000)
+//     },1000)
+// }
+// msg();
+//Callback hell
