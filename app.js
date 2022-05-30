@@ -299,4 +299,38 @@
 // }
 // outerFun(5);
 
-//Synchronous JS Prog : 
+//Synchronous JS Prog : phela kaam hoga us k bd dosra kaam start hoga
+// 1st work = 10 mint, 2nd work = 5sec
+//jb tk 1st end nhi hoga 2nd start nhi hoga
+//example
+// const fun1 = () => {
+//     console.log('Func1 is called');
+// }
+
+// const fun2 = () => {
+//     console.log('Func2 is called');
+//     fun1();
+//     console.log('Func2 is called again');
+
+// }
+// fun2();
+
+//Asynchoronous JS Prog : sare kaam 1 by 1 hote rahen gay
+// 1st work = 10 mint, 2nd work = 5sec
+//2nd wala kaam 5sec me hojaega aur 1st wala b chalta rahe ga
+//example
+// const fun1 = () => {
+//     setTimeout(()=>{
+
+//         console.log('Func1 is called');
+//     }, 2000);
+    
+// }
+
+// const fun2 = () => {
+//     console.log('Func2 is called');
+//     fun1();
+//     console.log('Func2 is called again');
+
+// }
+// fun2();
