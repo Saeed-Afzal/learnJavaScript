@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+    <div class="container">
+        <div class="search-wrapper">
+            <input type="text" id="country-inp" placeholder="Enter a country name">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+<script>
+    let searchBtn = document.getElementById("search-btn");
+    let countryInp =document.getElementById("country-inp");
+    let result = document.getElementById('result')
+    searchBtn.addEventListener('click', () => {
+        let countryName = countryInp.value;
+        let finalUrl = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
+        console.log(finalUrl);
+
+        fetch(finalUrl).then((response) => response.json()).then((data) => {
+            console.log(data[0]);
+            
+            console.log(data[0].capital[0]);
+            console.log(data[0].flags.svg);
+            console.log(data[0].name.common);
+            console.log(data[0].continents[0]);
+            console.log(Object.keys(data[0].currencies)[0]);
+            console.log(data[0].currencies[Object.keys(data[0].currencies)].name);
+            console.log(Object.values(data[0].languages).toString().split(",").join(", "));
+            // result.innerHTML = `<img src = "${data[0].flags.svg}"`
+            result.innerHTML = `
+            <img src = "${data[0].flags.svg}" class="flag-img"/>
+            <h2>${data[0].name.common}</h2>
+            `
+        })
+
+    })
+</script>
+</html>
