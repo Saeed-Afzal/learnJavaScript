@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form id="tempCalc" onsubmit="calculateTemp(); return false">
+            <label for="temp">Please Enter the temperature :</label>
+            <br><br>
+            <input type="number" id="temp">&nbsp;&nbsp;
+            <select name="tempDiff" id="tempDiff">
+                <option value="cel">*Celsius</option>
+                <option value="fah">*Fahrenheit</option>
+                
+            </select>
+            <br><br>
+            <center>
+            
+                <input type="submit" class="submit">
+            
+            <br><br>
+            <span id="result"></span>
+        </center>
+        </form>
+    </div>
+    <script>
+        calculateTemp = () => {
+            const temp = document.getElementById('temp').value;
+
+            const tempSelected = document.getElementById('tempDiff');
+            const valueSelected = tempSelected.options[tempSelected.selectedIndex].value;
+            console.log(valueSelected);
+            let result;
+
+
+            const celtoFah = (temp) => {
+                let fahrenheit = Math.round((temp * 9 / 5) + 32)
+                return fahrenheit;
+            }
+            const fahtoCel = (temp) => {
+                let celsius = Math.round((temp - 32) * 5 / 9)
+                return celsius;
+            }
+
+
+            if (valueSelected == 'cel') {
+                result = celtoFah(temp);
+                document.getElementById('result').innerHTML = `${temp} Celsius = ${result} Fahrenheit`;
+            }
+            else {
+                result = fahtoCel(temp);
+                document.getElementById('result').innerHTML = `${temp} Fahrenheit = ${result} Celsius`;
+            }
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
