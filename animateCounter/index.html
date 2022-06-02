@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Counter</title>
+</head>
+<body>
+    <div class="main">
+        <div class="counter" data-target="4000"></div>
+    </div>
+    <div class="main">
+        <div class="counter" data-target="15000"></div>
+    </div>
+    <div class="main">
+        <div class="counter" data-target="2000"></div>
+    </div>
+</body>
+
+
+<script>
+    const counters = document.querySelectorAll('.counter')
+    // console.log(counters);
+    counters.forEach((counter) => {
+        // console.log(counter);
+
+        counter.innerHTML = 0;
+        const updateCounter = () => {
+            const targetCounter = +counter.getAttribute('data-target') // plus is add to convert string into number
+            // console.log(targetCounter);
+            const starting = +counter.innerHTML;
+            const incre = targetCounter / 100;
+            
+            if(starting < targetCounter){
+                counter.innerHTML = starting + incre;
+
+                setTimeout( updateCounter, 10);
+                
+            }
+            else{
+                counter.innerHTML = targetCounter
+            }
+        }
+
+        updateCounter();
+    })
+</script>
+</html>
