@@ -146,3 +146,49 @@ button.learn-more .button-text{
   opacity: 1;
   right: 0;
 }
+
+/* notes */
+.note{
+    background-color: white;
+    margin: 30px 20px;
+    height: 200px;
+    width: 400px;
+    overflow-y: scroll;
+    margin-top: 5rem;
+
+}
+.note .operation{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1;
+}
+.note .operation button{
+    background-color: transparent;
+    color: white;
+    padding: 1px;
+    cursor: pointer;
+    border: none;
+    margin-left: 0.5rem;
+}
+.fa-edit, .fa-trash-alt{
+    color: white;
+    padding: 10px;
+    background-color: rgb(0, 132, 88);
+    border-radius: 50%;
+}
+.fa-trash-alt{
+    background-color: #f4511e;
+}
+.main{
+    padding: 20px;
+}
+.hidden{
+    display: none;
+}
+.note textarea{
+    outline: none;
+    border: none;
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+}
