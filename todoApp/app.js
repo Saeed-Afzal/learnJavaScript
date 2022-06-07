@@ -45,6 +45,7 @@ const addnote = (text = '') => {
     //deleting the note
     deleteBtn.addEventListener('click', () =>{
         note.remove();
+        updateLocalData();
     })
 
 // console.log(text);
