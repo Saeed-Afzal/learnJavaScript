@@ -367,3 +367,11 @@
 // }
 // msg();
 //Callback hell
+
+
+//how to empty array
+// const arr = [1,2,3]
+// console.log("the array has elements :" + arr); // [1,2,3]
+// arr.length = 0
+// console.log("Now the array is empty :" + arr); // []
+//how to empty array
