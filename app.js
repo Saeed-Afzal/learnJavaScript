@@ -378,11 +378,40 @@
 
 // var and let
 //In the second loop, the variable i was declared using the let keyword: variables declared with the let (and const) keyword are block-scoped (a block is anything between { }). During each iteration, i will have a new value, and each value is scoped inside the loop.
-for (var i = 0; i < 3; i++) {
-    setTimeout(() => console.log(i), 1);
-  }
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(() => console.log(i), 1);
+//   }
   
-  for (let i = 0; i < 3; i++) {
-    setTimeout(() => console.log(i), 1);
-  }
+//   for (let i = 0; i < 3; i++) {
+//     setTimeout(() => console.log(i), 1);
+//   }
 // var and let
+
+
+//call array using loops---------------------------------------------
+// const arr = [1,2,3,4,5]
+
+//using for loop
+// for(let i = 0; i< arr.length;i++){
+//   console.log(arr[i]);
+// }
+
+//using while loop
+// let i = 0;
+// while(i < arr.length){
+//   console.log(arr[i]);
+//   i++;
+// }
+
+//using for of
+// for(let ar of arr){
+//   console.log(ar); // print elements
+// }
+
+//using for in 
+// index deta hai lekin items b get kr sakte hain
+// for(let index in arr){
+//   // console.log(index); // index dega
+//   console.log(arr[index]); // element dega
+// }
+//call array using loops----------------------------------------------
