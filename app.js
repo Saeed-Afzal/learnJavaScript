@@ -415,3 +415,12 @@
 //   console.log(arr[index]); // element dega
 // }
 //call array using loops----------------------------------------------
+
+
+//array destructure
+// let arr = [1,2,3,4]
+// let [var1, , ,var4,] = arr;
+// console.log(var1);
+// console.log(var4);
+
+//array destructure
