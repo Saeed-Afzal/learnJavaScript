@@ -422,5 +422,19 @@
 // let [var1, , ,var4,] = arr;
 // console.log(var1);
 // console.log(var4);
-
 //array destructure
+
+//iterate object
+// const person = {
+//     name : 'Saeed',
+//     age : 23,
+//     "person hobbies" : ["reading", "designing", "researching"] // inverted comma se space create kr sakte hain
+// }
+
+// for(let key in person){
+//     // console.log(key); // print keys
+//     console.log(person[key]); // print keys
+
+// }
+//iterate object
+
