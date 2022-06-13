@@ -460,3 +460,17 @@
 
 // console.log(`My name is : ${myName}`);
 // //object destructure
+
+
+//object inside array
+// const users = [
+//     {userId: 1, userName: 'Aslam'},
+//     {userId: 2, userName: 'Alam'},
+//     {userId: 3, userName: 'Ali'},
+// ];
+
+// for(let user of users){
+//     console.log(user.userId);// print all userId
+//     console.log(user); // print all elements
+// }
+// //object inside array
