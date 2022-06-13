@@ -449,3 +449,14 @@
 // console.log(newarr);
 //spread operators
 
+//object destructure
+// const obj = {
+//     name: 'Saeed',
+//     age: 23,
+// }
+
+// // let {name, age} = obj; //let name bnae ga mtlb js name ki property hai usi name se bnae ga
+// let {name:myName, age:myAge} = obj;//myName ka let bnaega ab aur usme Saeed store krlega
+
+// console.log(`My name is : ${myName}`);
+// //object destructure
