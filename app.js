@@ -212,7 +212,7 @@
 //object destructuring
 // const obj = {
 //     myName: 'Saeed',
-    
+
 //     myAge: 23,
 // }
 // let {myName, myAge} = obj;
@@ -324,7 +324,7 @@
 
 //         console.log('Func1 is called');
 //     }, 2000);
-    
+
 // }
 
 // const fun2 = () => {
@@ -344,7 +344,7 @@
 //             console.log(num1, num2 , num3);
 
 //             console.log(num1 + num2 + num3);
-            
+
 //         }
 //     }
 // }
@@ -381,7 +381,7 @@
 // for (var i = 0; i < 3; i++) {
 //     setTimeout(() => console.log(i), 1);
 //   }
-  
+
 //   for (let i = 0; i < 3; i++) {
 //     setTimeout(() => console.log(i), 1);
 //   }
@@ -531,4 +531,68 @@
 // }
 // myFunc(myFunc2)
 //callback function
+
+
+//for Each
+// const num = [1,2,3]
+
+// function myFunc(number,index){
+//     console.log(`The index is ${index} and number is ${number}`);
+// }
+// num.forEach(myFunc);
+//for Each
+
+
+//map
+// const arr = [1,2,3]
+
+// arr.map((num) => {
+//     console.log(num*num); //return krega squares
+// })
+//map
+
+//filter
+// const arr = [1,2,3,4,5,6,7]
+
+//isodd func using filter method
+// const isOdd = arr.filter((isodd) => {
+//     return isodd % 2 ==0
+// });
+// console.log(isOdd); // 2,4,6
+
+
+//isEven func using filter method
+// const isEven = arr.filter((iseven) => {
+//     return iseven % 2 !=0
+// });
+// console.log(isEven); // 1,3,5,7
+
+//filter
+
+//reduce
+const arr = [1, 2, 3, 4, 5, 6, 7]
+
+//Reduce
+//Initial Call: Accumulator       CurrentValue        Return
+//First Call  : 1                 2                   3
+//Second Call : 3                 3                   6
+//Third Call  : 6                 4                   10
+
+//return ki value accumulator me chale jaegi
+// const sumAll = arr.reduce((accumulator, currentvalue) =>{
+//     return accumulator + currentvalue
+// });
+// console.log(sumAll);
+//addtoCart
+
+// const cart = [{ product: 'product1', price: 10000 },
+// { product: 'product2', price: 20000 }, 
+// { product: 'product3', price: 30000 },
+// ]
+
+// const myCart = cart.reduce((accumulator, currentprice) => {
+//    return accumulator + currentprice.price;
+// },0); // initial accumulator ki value 0 hogi
+// console.log(myCart);
+//reduce
 
