@@ -474,3 +474,17 @@
 //     console.log(user); // print all elements
 // }
 // //object inside array
+
+
+//nested destructuring
+// const arr = [
+//     {user : 'Saeed', age: 23},
+//     {user : 'Ali', age: 25},
+
+// ]
+
+// const [{user}, {age}] = arr;
+// console.log(user); //Saeed
+// console.log(age);  //25
+//nested destructuring
+
