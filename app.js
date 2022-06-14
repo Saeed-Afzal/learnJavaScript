@@ -511,13 +511,24 @@
 // }
 // myFunc(3,4,5,6,7,8)
 //eg2 : add parameters 
-function addnum(...a){
-    let total = 0;
-    //a k andr 1,2,3 store hogaya array ki trah
-    for(let num of a){
-        total = total + num;
-    }
-    console.log(total); //add krdega 1,2,3 ko
-}
-addnum(1,2,3) ;
+// function addnum(...a){
+//     let total = 0;
+//     //a k andr 1,2,3 store hogaya array ki trah
+//     for(let num of a){
+//         total = total + num;
+//     }
+//     console.log(total); //add krdega 1,2,3 ko
+// }
+// addnum(1,2,3) ;
 //rest parameters
+
+//callback function: dosra func kisi func me as an argument call hoojae
+// function myFunc2(){
+//     console.log('hello i m calling as an argument in myFunc');
+// }
+// function myFunc(a){
+//     a();
+// }
+// myFunc(myFunc2)
+//callback function
+
