@@ -490,12 +490,34 @@
 
 //lexical scope
 //agr variable func me define nhi to wo use func k bahir daikhe ga eg
-function myApp(){
-const var1 = 'myvar'
-function myFunc(){
-    console.log(var1); // is func me value ni thi phr isne upr check ki value ko mtlb apne lexical scope me check ki
-}
-myFunc();
-}
-myApp();
+// function myApp(){
+// const var1 = 'myvar'
+// function myFunc(){
+//     console.log(var1); // is func me value ni thi phr isne upr check ki value ko mtlb apne lexical scope me check ki
+// }
+// myFunc();
+// }
+// myApp();
 //lexical scope
+
+
+//rest parameters
+//agr hm is ka array bnana chahte hain to kese bne ga
+// eg1
+// function myFunc(a,b,...c){
+//     console.log(`a is ${a}`); //3
+//     console.log(`b is ${b}`); //4
+//     console.log(`c is ${c}`); //5,6,7,8 means array bn jaega
+// }
+// myFunc(3,4,5,6,7,8)
+//eg2 : add parameters 
+function addnum(...a){
+    let total = 0;
+    //a k andr 1,2,3 store hogaya array ki trah
+    for(let num of a){
+        total = total + num;
+    }
+    console.log(total); //add krdega 1,2,3 ko
+}
+addnum(1,2,3) ;
+//rest parameters
