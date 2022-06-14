@@ -488,3 +488,14 @@
 // console.log(age);  //25
 //nested destructuring
 
+//lexical scope
+//agr variable func me define nhi to wo use func k bahir daikhe ga eg
+function myApp(){
+const var1 = 'myvar'
+function myFunc(){
+    console.log(var1); // is func me value ni thi phr isne upr check ki value ko mtlb apne lexical scope me check ki
+}
+myFunc();
+}
+myApp();
+//lexical scope
