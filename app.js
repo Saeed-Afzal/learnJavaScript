@@ -570,7 +570,7 @@
 //filter
 
 //reduce
-const arr = [1, 2, 3, 4, 5, 6, 7]
+// const arr = [1, 2, 3, 4, 5, 6, 7]
 
 //Reduce
 //Initial Call: Accumulator       CurrentValue        Return
@@ -595,4 +595,43 @@ const arr = [1, 2, 3, 4, 5, 6, 7]
 // },0); // initial accumulator ki value 0 hogi
 // console.log(myCart);
 //reduce
+
+
+//sort array
+//eg1
+// const arr = [1,200,1200,400];
+
+// arr.sort((a,b) => {
+//     return a-b;
+// })
+// console.log(arr);
+//eg2
+// const names = ['Saeed', 'abc','Ahmed']
+// names.sort();
+// console.log(names);
+//eg3
+const products = [
+    {productId: 1, price : 200},
+    {productId: 2, price : 1200},
+    {productId: 3, price : 400},
+    {productId: 4, price : 300},
+    {productId: 5, price : 500},
+
+]
+// array b change kr dega ye
+// products.sort((a,b) => {
+//    return a.price - b.price;
+// })
+
+// console.log(products);
+
+// array change ni krega ye
+// const lowToHigh = products.slice(0).sort((a,b) => {
+//    return a.price - b.price;
+// })
+
+// console.log(products); // previous array
+// console.log(lowToHigh); // new array
+
+//sort array
 
