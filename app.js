@@ -635,3 +635,15 @@ const products = [
 
 //sort array
 
+//find array
+// const users = [
+//     {userId : 1, userName : 'Saeed'},
+//     {userId : 2, userName : 'Ali'},
+//     {userId : 3, userName : 'Ahmed'},
+
+// ]
+// const myUser = users.find((str) => {
+//     return str.userId ===3;
+// })
+// console.log(myUser); 
+//find array
