@@ -647,3 +647,21 @@ const products = [
 // })
 // console.log(myUser); 
 //find array
+
+//every array
+// const arr = [2,4,6,8,10]
+// //check even if true or false
+// //tamam elements even hain k ni
+// const isEven = arr.every((num)=> num%2==0)
+// console.log(isEven);
+//every array
+
+//some array
+//kia 1 b aesa hai jo even hai agr hai to true hojaega
+// const arr = [1,3,5,7]
+// //check even if true or false
+// //tamam elements even hain k ni
+// const isEven = arr.some((num)=> num%2==0)
+// console.log(isEven);
+//some array
+
