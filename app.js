@@ -670,3 +670,17 @@ const products = [
 // arr.fill(0,2,4)
 // console.log(arr);
 //fill array
+
+//sets
+// const num = new Set();
+// num.add(3);
+// console.log(num);
+// if(num.has(1)){
+//     console.log('1 is present');
+// }
+// else{
+//     console.log('1 is not present');
+// }
+
+//sets
+
