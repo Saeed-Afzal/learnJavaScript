@@ -683,4 +683,18 @@ const products = [
 // }
 
 //sets
-//
+//methods
+//methods: functions inside object
+//this: wo method hai jo object me call horha hai yahan this = person
+//eg1
+// const person = {
+//     name: 'Saeed',
+//     age: 23,
+//     about: function(){
+//         console.log(`Person name is ${this.name} and age is ${this.age}`);
+//     }
+// }
+// person.about();
+//methods
+
+
