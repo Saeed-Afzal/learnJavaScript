@@ -697,4 +697,23 @@ const products = [
 // person.about();
 //methods
 
+//call apply bind
+//1 object ka func dosre me call krna hoto use kr sakte hain
+
+// const obj1 = {
+//     name : 'obj1',
+//     about : function(){
+//         console.log(`this is ${this.name}`);
+//     }
+// }
+// //obj2 k pas about ka func ni hia
+// const obj2 = {
+//     name : 'obj2',
+// }
+
+// obj1.about.call(obj2); // call se wo obj2 k lye wo fuction call krdega
+
+//apply: same as call lekin array me b hm kr sakte hai
+//bind: same lekin ye hmen 1 func return krega jo hm bd me b use kr sakte hain
+//call apply bind
 
