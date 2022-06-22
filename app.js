@@ -717,3 +717,19 @@ const products = [
 //bind: same lekin ye hmen 1 func return krega jo hm bd me b use kr sakte hain
 //call apply bind
 
+
+// merging two arrays
+const arr1 = ['Saeed ', 'Ali '];
+const arr2 = ['Afzal', 'Mughal'];
+
+const fullname = []
+
+for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+        console.log(arr1[i] + arr2[j]);
+        i++
+    }
+    
+}
+// merging two arrays
+
