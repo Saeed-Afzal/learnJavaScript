@@ -719,17 +719,17 @@ const products = [
 
 
 // merging two arrays
-const arr1 = ['Saeed ', 'Ali '];
-const arr2 = ['Afzal', 'Mughal'];
+// const arr1 = ['Saeed ', 'Ali '];
+// const arr2 = ['Afzal', 'Mughal'];
 
-const fullname = []
+// const fullname = []
 
-for (let i = 0; i < arr1.length; i++) {
-    for (let j = 0; j < arr2.length; j++) {
-        console.log(arr1[i] + arr2[j]);
-        i++
-    }
+// for (let i = 0; i < arr1.length; i++) {
+//     for (let j = 0; j < arr2.length; j++) {
+//         console.log(arr1[i] + arr2[j]);
+//         i++
+//     }
     
-}
+// }
 // merging two arrays
 

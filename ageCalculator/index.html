@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <h2>Enter Your Date of Birth</h2>
+        <br><br>
+        <div class="search-wrapper">
+
+            <input type="date" name="" id="d">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+<script>
+    const search = document.getElementById('search-btn')
+
+    search.addEventListener('click', ()=> {
+    var input = document.getElementById( 'd' ).value;
+var d = new Date( input );
+    if ( !!d.valueOf() ) { // Valid date
+      var  year = d.getFullYear();
+      var  month = d.getMonth();
+      var  day = d.getDate();
+    } else { /* Invalid date */ }
+
+    console.log(year);
+})
+
+
+
+</script>
+
+</html>
