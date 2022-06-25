@@ -14,7 +14,7 @@
             <input class="result" id="result" type="text" width="5x">
         </div>
         <div>
-            <button class="clear" value="1">C</button>
+            <button class="clear" onclick="clearResult()" >C</button>
 
 
         </div>
@@ -46,7 +46,7 @@
         <div>
             <button class="halfbtn" onclick="getNumber('0')" >0</button>
 
-            <button class="halfbtn" onclick="getNumber()" >=</button>
+            <button class="halfbtn" onclick="getResult()" >=</button>
         </div>
     </div>
 </body>
@@ -56,8 +56,18 @@
 
         var result = document.getElementById('result');
         result.value += num 
-        console.log(num);
+        // console.log(num);
     }
+    function clearResult(){
+        
+        var result = document.getElementById('result');
+        result.value = ''
+    }
+    function getResult(num){
 
+        var result = document.getElementById('result');
+        result.value = eval(result.value)
+
+    }
 </script>
 </html>
