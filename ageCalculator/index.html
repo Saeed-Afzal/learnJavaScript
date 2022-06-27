@@ -26,6 +26,7 @@
 </body>
 <script>
     const search = document.getElementById('search-btn')
+    var result = document.getElementById('result')
 
     search.addEventListener('click', ()=> {
     var input = document.getElementById( 'd' ).value;
@@ -34,9 +35,19 @@ var d = new Date( input );
       var  year = d.getFullYear();
       var  month = d.getMonth();
       var  day = d.getDate();
-    } else { /* Invalid date */ }
+    } else {result.innerHTML = `Invalid Age`}
 
-    //no comment
+    var dobmili = d.getTime();
+    var today = new Date();
+    var todaymili = today.getTime(); 
+    var diff = todaymili - dobmili;
+    var accurate = Math.floor(diff/(1000*60*60*24*30*12))
+    // console.log(dobmili);
+    // console.log(todaymili);
+    // console.log(diff);
+    // console.log(accurate);
+    
+    result.innerHTML = `<h2>Your Age is ${accurate} </h2>`
 
 })
 
