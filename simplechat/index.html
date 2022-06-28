@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Messages</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="messages">
+
+    </div>
+
+    <div>
+        <input type="text" name="" id="val">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</body>
+<script>
+
+
+
+function sendMessage(){
+    var val = document.getElementById('val');
+var p = document.createElement('p');
+var textNode = document.createTextNode(val.value)
+p.appendChild(textNode)
+
+var messages = document.getElementById('messages');
+messages.appendChild(p)
+
+val.value = ""
+}
+</script>
+</html>
