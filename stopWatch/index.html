@@ -16,8 +16,8 @@
     </div>
 
     <div>
-        <button onclick="start()">Start</button>
-        <button onclick="stop()">Stop</button>
+        <button id="startBtn" onclick="start()">Start</button>
+        <button id="stopBtn" onclick="stop()">Stop</button>
         <button onclick="reset()">Restart</button>
     </div>
 </body>
@@ -49,14 +49,19 @@
         }
     }
 
+    var startBtn = document.getElementById('startBtn');
 function start(){
 
     interval = setInterval(timer,10)
+    startBtn.disabled = true
+
 }
 
 
 function stop(){
     clearInterval(interval)
+    startBtn.disabled = false
+
 }
 
 function reset(){
