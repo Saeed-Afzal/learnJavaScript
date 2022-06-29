@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+<body>
+    <div>
+        <input placeholder="Add Item here.." id="todo-item" type="text">
+        <button onclick="addTodo()">Add Item</button>
+    </div>
+
+    <!-- list -->
+
+    <div>
+        <ul id="list">
+
+        </ul>
+    </div>
+</body>
+<script>
+    var list = document.getElementById('list');
+    function addTodo(){
+        var todo_item = document.getElementById('todo-item')
+
+        //create li
+        var li = document.createElement('li');
+        var liText = document.createTextNode(todo_item.value);
+        li.appendChild(liText)
+        list.appendChild(li)
+
+        //create delete button
+        var dltBtn = document.createElement('button');
+        var dltText = document.createTextNode('Delete')
+        dltBtn.appendChild(dltText)
+        li.appendChild(dltBtn)
+        //set attribute in delete
+        dltBtn.setAttribute("onclick", "deleteItem(this)")
+
+
+        //empty input
+        todo_item.value = ""
+        // console.log(todo_item.value);
+    }
+
+    function deleteItem(e){
+        // console.log(e.parentNode);
+        e.parentNode.remove()
+    }
+</script>
+</html>
