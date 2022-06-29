@@ -15,6 +15,8 @@
     <div>
         <input placeholder="Add Item here.." id="todo-item" type="text">
         <button onclick="addTodo()">Add Item</button>
+        <button onclick="deleteTodo()">Delete All</button>
+
     </div>
 
     <!-- list -->
@@ -45,14 +47,39 @@
         dltBtn.setAttribute("onclick", "deleteItem(this)")
 
 
+        //create edit button
+        var edtBtn = document.createElement('button');
+        var edtText = document.createTextNode('Edit')
+        edtBtn.appendChild(edtText)
+        li.appendChild(edtBtn)
+        //set attribute in delete
+        edtBtn.setAttribute("onclick", "editItem(this)")
+
+
         //empty input
         todo_item.value = ""
         // console.log(todo_item.value);
     }
 
+    //delete function
     function deleteItem(e){
         // console.log(e.parentNode);
         e.parentNode.remove()
+    }
+    //delete all function
+    function deleteTodo(){
+        list.innerHTML = ""
+    }
+
+    //edit function
+    function editItem(e){
+        // console.log(e.parentNode.childNodes[0]);
+        // console.log(e.parentNode.firstChild);
+        // e.parentNode.firstChild.nodeValue = 'Saeed'
+        var val = e.parentNode.firstChild.nodeValue;
+        var editValue = prompt('Enter New Item', val)
+        e.parentNode.firstChild.nodeValue = editValue
+
     }
 </script>
 </html>
