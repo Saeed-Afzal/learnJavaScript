@@ -16,11 +16,11 @@
         <fieldset>
             <input type="radio" name="math" id="q1-a1">5
             <br>
-            <input type="radio" name="math" id="q1-a1">4
+            <input type="radio" name="math" id="q1-a2">4
             <br>
-            <input type="radio" name="math" id="q1-a1">14
+            <input type="radio" name="math" id="q1-a3">14
             <br>
-            <input type="radio" name="math" id="q1-a1">0
+            <input type="radio" name="math" id="q1-a4">0
             <br>
         </fieldset>
     </div>
@@ -29,15 +29,41 @@
         <h2>What is 4 + 2 ?</h2>
         <hr>
         <fieldset>
-            <input type="radio" name="math" id="q1-a1">5
+            <input type="radio" name="math1" id="q2-a1">6
             <br>
-            <input type="radio" name="math" id="q1-a1">4
+            <input type="radio" name="math1" id="q2-a2">4
             <br>
-            <input type="radio" name="math" id="q1-a1">14
+            <input type="radio" name="math1" id="q2-a3">14
             <br>
-            <input type="radio" name="math" id="q1-a1">0
+            <input type="radio" name="math1" id="q2-a4">0
             <br>
         </fieldset>
     </div>
+    <br>
+    <div>
+        <button onclick="result()">
+            Result
+        </button>
+    </div>
 </body>
+
+<script>
+
+    function result(){
+        var score =0;
+        var right1 = document.getElementById('q1-a2')
+    
+        if (right1.checked == true) {
+            score++
+        }
+
+        var right2 = document.getElementById('q2-a1')
+        if (right2.checked == true) {
+            score++
+        }
+
+        alert('Your Score is '+ score)
+    }
+
+</script>
 </html>
