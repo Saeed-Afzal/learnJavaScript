@@ -736,6 +736,3 @@ const products = [
 
 // console.log(arr2);
 // merging two arrays
-
-//
-//
