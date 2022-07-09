@@ -736,3 +736,17 @@ const products = [
 
 // console.log(arr2);
 // merging two arrays
+
+//location
+console.log(window.location.href); //location mil jaegi
+console.log(window.location.assign('www.google.com'));
+console.log(window.location.replace('www.google.com')); //replace krdega
+window.location.reload() // cache reload
+window.location.reload(true) //server reload
+history.forward() // agay jaane k lye
+history.back() // back jaane k lye
+history.go(-1) // 1 page back jaega (pagination k lye)
+document.referrer() // is jaga kis website se aen hain
+
+
+//location
