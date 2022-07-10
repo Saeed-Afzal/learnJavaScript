@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,46 @@
     <title>Percentage Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h2>Enter Your Marks</h2>
         <br><br>
         <div class="search-wrapper">
 
-            <input type="number" name="" id="d" placeholder="English Marks">
-            <input type="number" name="" id="d" placeholder="Urdu Marks">
-            <input type="number" name="" id="d" placeholder="Bio Marks">
-            <input type="number" name="" id="d" placeholder="Maths Marks">
-            <input type="number" name="" id="d" placeholder="Chemistry Marks">
+            <input type="number" name="" id="english" placeholder="English Marks" required>
+            <input type="number" name="" id="urdu" placeholder="Urdu Marks" required>
+            <input type="number" name="" id="bio" placeholder="Bio Marks" required>
+            <input type="number" name="" id="math" placeholder="Maths Marks" required>
+            <input type="number" name="" id="chemistry" placeholder="Chemistry Marks" required>
 
             <button id="search-btn">Search</button>
         </div>
         <div id="result"></div>
     </div>
 </body>
+<script>
+
+    const search = document.getElementById('search-btn')
+    search.addEventListener('click', () => {
+
+
+        const english = parseInt(document.getElementById('english').value);
+        const urdu = parseInt(document.getElementById('urdu').value);
+        const bio = parseInt(document.getElementById('bio').value);
+        const math = parseInt(document.getElementById('math').value);
+        const chemistry = parseInt(document.getElementById('chemistry').value);
+        const obtained = english + urdu + bio + math + chemistry
+        const total = Math.floor((obtained / 500) * 100)
+
+
+        const result = document.getElementById('result')
+        result.innerHTML = `<h2>Your Obtained Marks are ${obtained} from 500. Your Percentage is ${total}%.</h2>`
+        console.log(total);
+    })
+
+
+
+</script>
+
 </html>
