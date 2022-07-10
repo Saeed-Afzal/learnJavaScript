@@ -40,9 +40,39 @@
         const obtained = english + urdu + bio + math + chemistry
         const total = Math.floor((obtained / 500) * 100)
 
+        var grade;
+        if (total >= 80) {
+             grade = 'A+'
+        }
+        else if (total >= 70) {
+             grade = 'A'
+        }
+        else if (total >= 60) {
+             grade = 'B'
+        }else if (total >= 50) {
+             grade = 'C'
+        }else if (total >= 40) {
+             grade = 'D'
+        }else if (total >= 30) {
+             grade = 'E'
+        }
+        else{
+             grade = 'F'
+
+        }
+        var remarks;
+        if(total > 32){
+             remarks = 'PASS'
+        }
+        else{
+             remarks = 'FAIL'
+        }
+
+
+
 
         const result = document.getElementById('result')
-        result.innerHTML = `<h2>Your Obtained Marks are ${obtained} from 500. Your Percentage is ${total}%.</h2>`
+        result.innerHTML = `<h2>Your Obtained Marks are ${obtained} from 500. Your Percentage is ${total}%. Your grade is ${grade} and You are ${remarks}.</h2>`
         console.log(total);
     })
 
