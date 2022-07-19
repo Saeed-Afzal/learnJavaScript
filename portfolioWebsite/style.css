@@ -17,7 +17,7 @@ li{
 .header{
     padding: 0 4.8rem;
     height: 10rem;
-    background: red;
+    /* background: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,3 +31,19 @@ li{
     display: flex;
     gap: 4.8rem;
 }
+
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.navbar-link:hover,
+.navbar-link:active{
+    color:blueviolet
+}
+
