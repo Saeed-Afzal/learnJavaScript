@@ -738,17 +738,96 @@ const products = [
 // merging two arrays
 
 //location
-console.log(window.location.href); //location mil jaegi
-console.log(window.location.assign('www.google.com'));
-console.log(window.location.replace('www.google.com')); //replace krdega
-window.location.reload() // cache reload
-window.location.reload(true) //server reload
-history.forward() // agay jaane k lye
-history.back() // back jaane k lye
-history.go(-1) // 1 page back jaega (pagination k lye)
-document.referrer() // is jaga kis website se aen hain
+// console.log(window.location.href); //location mil jaegi
+// console.log(window.location.assign('www.google.com'));
+// console.log(window.location.replace('www.google.com')); //replace krdega
+// window.location.reload() // cache reload
+// window.location.reload(true) //server reload
+// history.forward() // agay jaane k lye
+// history.back() // back jaane k lye
+// history.go(-1) // 1 page back jaega (pagination k lye)
+// document.referrer() // is jaga kis website se aen hain
 
 
 //location
 
 
+// Javascript Questions?
+
+// 1. Write a JavaScript function that reverse a number.
+// Example x = 32243;
+// Expected Output : 34223
+
+
+// function reverseNumber(number) {
+
+//     var revNumber = 0;
+
+//     console.log("######### steps ###########");
+
+//     while (number > 0) {
+//       console.log("Step " , number); 
+//       console.log(revNumber)  // 0
+//       revNumber = (revNumber * 10) + (number % 10); //0 + 876 % 10 = 6
+//       console.log(revNumber)
+//       number = Math.floor(number / 10);
+//       console.log("Now Number becomes",number)
+//     }
+//       console.log("######### steps End ###########");
+
+//     return revNumber;
+//   }
+
+//   console.log(reverseNumber(876));
+
+// let x= 12300;
+// let y = parseFloat(x.toString().split('').reverse().join(''));
+// console.log(y);
+
+
+
+
+
+
+// 2. Write a JavaScript function that checks whether a passed string is palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam, radar or level.
+
+
+
+
+
+
+
+
+
+
+// 3. Write a JavaScript function that generates all combinations of a string.
+// Example string : 'dog'
+// Expected Output : d,do,dog,o,og,g
+
+// 4. Write a JavaScript function that returns a passed string with letters in alphabetical order.
+// Example string : 'webmaster'
+// Expected Output : 'abeemrstw'
+// Assume punctuation and numbers symbols are not included in the passed string.
+
+// 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+// Example string : 'the quick brown fox'
+// Expected Output : 'The Quick Brown Fox '
+
+// 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+// Example string : 'Web Development Tutorial'
+// Expected Output : 'Development'
+
+// 7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+// Example string : 'The quick brown fox'
+// Expected Output : 5
+
+// 8. Write a JavaScript function that accepts a number as a parameter and check the number is prime or not.
+// Note : A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+// 9. Write a JavaScript function which accepts an argument and returns the type.
+// Note : There are six possible values that typeof returns: object, boolean, function, number, string, and undefined.
+
+// 10. Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively.
+// Sample array : [1,2,3,4,5]
+// Expected Output : 2,4
