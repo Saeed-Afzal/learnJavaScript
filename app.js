@@ -752,7 +752,7 @@ const products = [
 //location
 
 
-// Javascript Questions?
+//====================================================================== Javascript Questions?
 
 // 1. Write a JavaScript function that reverse a number.
 // Example x = 32243;
@@ -767,9 +767,9 @@ const products = [
 
 //     while (number > 0) {
 //       console.log("Step " , number); 
-//       console.log(revNumber)  // 0
-//       revNumber = (revNumber * 10) + (number % 10); //0 + 876 % 10 = 6
-//       console.log(revNumber)
+//       console.log(revNumber)  // 0 , 6 , 
+//       revNumber = (revNumber * 10) + (number % 10); //0 + 876 % 10 = 6, 60 + 7
+//       console.log('Rev No ',revNumber) // 6 , 7
 //       number = Math.floor(number / 10);
 //       console.log("Now Number becomes",number)
 //     }
@@ -845,17 +845,17 @@ const products = [
 // Expected Output : 'The Quick Brown Fox '
 
 
-const capitalize = (str) => {
-    let words = str.split(' ')
+// const capitalize = (str) => {
+//     let words = str.split(' ')
 
-    for(let i = 0 ; i < words.length; i++){
-        words[i]= words[i][0].toUpperCase() + words[i].slice(1)
-    }
-    words = words.join(' ')
-    return words
-}
+//     for(let i = 0 ; i < words.length; i++){
+//         words[i]= words[i][0].toUpperCase() + words[i].slice(1)
+//     }
+//     words = words.join(' ')
+//     return words
+// }
 
-console.log(capitalize('the quick brown fox' ));
+// console.log(capitalize('the quick brown fox' ));
 
 
 
@@ -863,10 +863,33 @@ console.log(capitalize('the quick brown fox' ));
 // 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
 // Example string : 'Web Development Tutorial'
 // Expected Output : 'Development'
+const longestWord = (str) => {
+    var substr = str.split(' ')
+
+    var longWord = '';
+    for(let i = 0 ; i < substr.length ; i++){
+        if(substr[i].length > longWord.length){
+            longWord = substr[i]
+        }
+    }
+    return longWord
+}
+
+console.log(longestWord('Web Development Tutorial'));
+
+
+
+
+
+
 
 // 7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
 // Example string : 'The quick brown fox'
 // Expected Output : 5
+
+
+
+
 
 // 8. Write a JavaScript function that accepts a number as a parameter and check the number is prime or not.
 // Note : A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
