@@ -792,27 +792,73 @@ const products = [
 // 2. Write a JavaScript function that checks whether a passed string is palindrome or not?
 // A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam, radar or level.
 
+// let x= 'madaam';
 
-
-
-
-
-
-
+//     let y = x.split('').reverse().join('')
+//     if(x == y){
+//         console.log('Its a palindrome');
+//     }
+//     else{
+//         console.log('Its not a palindrome');
+//     }
+    
 
 
 // 3. Write a JavaScript function that generates all combinations of a string.
 // Example string : 'dog'
 // Expected Output : d,do,dog,o,og,g
 
+// let possibleCombinations = (str) =>{
+//     let combinations = [];
+//       for(let i = 0 ;i < str.length; i++)
+//     {
+//         for(let j = i + 1; j< str.length + 1; j++)
+//         {
+//             combinations.push(str.slice(i , j));
+//         }
+//     }
+//    return combinations;
+// }
+// console.log(possibleCombinations('Dog'));
+
+
+
 // 4. Write a JavaScript function that returns a passed string with letters in alphabetical order.
 // Example string : 'webmaster'
 // Expected Output : 'abeemrstw'
 // Assume punctuation and numbers symbols are not included in the passed string.
 
+
+// var sortAlphabets = function(text) {
+//     return text.split('').sort().join('');
+// };
+// console.log(sortAlphabets('cbaasds'));
+
+
+
+
+
+
+
 // 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
 // Example string : 'the quick brown fox'
 // Expected Output : 'The Quick Brown Fox '
+
+
+const capitalize = (str) => {
+    let words = str.split(' ')
+
+    for(let i = 0 ; i < words.length; i++){
+        words[i]= words[i][0].toUpperCase() + words[i].slice(1)
+    }
+    words = words.join(' ')
+    return words
+}
+
+console.log(capitalize('the quick brown fox' ));
+
+
+
 
 // 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
 // Example string : 'Web Development Tutorial'
