@@ -863,19 +863,19 @@ const products = [
 // 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
 // Example string : 'Web Development Tutorial'
 // Expected Output : 'Development'
-const longestWord = (str) => {
-    var substr = str.split(' ')
+// const longestWord = (str) => {
+//     var substr = str.split(' ')
 
-    var longWord = '';
-    for(let i = 0 ; i < substr.length ; i++){
-        if(substr[i].length > longWord.length){
-            longWord = substr[i]
-        }
-    }
-    return longWord
-}
+//     var longWord = '';
+//     for(let i = 0 ; i < substr.length ; i++){
+//         if(substr[i].length > longWord.length){
+//             longWord = substr[i]
+//         }
+//     }
+//     return longWord
+// }
 
-console.log(longestWord('Web Development Tutorial'));
+// console.log(longestWord('Web Development Tutorial'));
 
 
 
@@ -887,6 +887,45 @@ console.log(longestWord('Web Development Tutorial'));
 // Example string : 'The quick brown fox'
 // Expected Output : 5
 
+
+
+//Solution 1
+// program to count the number of vowels in a string
+
+// defining vowels
+// const vowels = ["a", "e", "i", "o", "u"]
+
+// function countVowel(str) {
+//     // initialize count
+//     let count = 0;
+
+//     // loop through string to test if each character is a vowel
+//     for (let letter of str.toLowerCase()) {
+//         if (vowels.includes(letter)) {
+//             count++;
+//         }
+//     }
+
+//     // return number of vowels
+//     return count
+// }
+
+// // take input
+// const string = "the quick brown fox";
+
+// const result = countVowel(string);
+
+// console.log(result);
+
+//Solution 2
+// const vowelCount = str => {
+//     let vowels = /[aeiou]/gi;
+//     let result = str.match(vowels);
+//     let count = result.length;
+//     return count;
+//     // console.log(count);
+//   };
+// console.log(vowelCount('the quick brown fox'));
 
 
 
