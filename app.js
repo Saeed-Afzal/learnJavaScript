@@ -941,6 +941,3 @@ const products = [
 // Expected Output : 2,4
 
 
-//
-//
-//
