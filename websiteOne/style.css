@@ -17,6 +17,31 @@ header {
     position: relative;
 
 }
+/* for image */
+header:before{
+    content: "";
+    width: 520px;
+    height: 550px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 550px;
+    background-size: 100% 100%;
+    background-image: url('http://www.goodmorningimagesdownload.com/wp-content/uploads/2021/01/Best-Stylish-Profile-Photo-Download.jpg');
+}
+
+
+
+
+
+
+
+/* for image */
+
+
+
+
+
 
 nav {
     width: 100%;
@@ -43,8 +68,58 @@ nav {
     text-transform: uppercase;
 }
 
-ul li:hover {
+.active, ul li:hover {
     border-top: 2px solid #5dade2;
     border-bottom: 2px solid #5dade2;
 
+}
+
+.contact_btn a{
+    background-color: #d465ef;
+    padding: 12px 26px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+
+}
+
+.contact_btn a:hover{
+    background: linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+}
+
+
+/* center */
+
+.center_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.center_content h1{
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+
+}
+.center_content h2{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    /* margin-bottom: 10px; */
+    
+}
+.center_content h2:before{
+    content: "";
+    width: 80px;
+    height: auto;
+    border: 2px solid white;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    margin-bottom: 10px;
 }
