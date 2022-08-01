@@ -39,6 +39,39 @@ header:before{
 
 
 
+/* social icons */
+.social_media{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    /* right: 0; */
+    top: 40%;
+    left: 95%;
+
+}
+
+.fa_icons{
+    width: 40px;
+    height: 40px;
+   
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fa_icons:nth-child(even){
+    margin: 20px 0;
+}
+.fa_icons:hover{
+    background-image: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%);
+
+}
+
+
 
 
 /* for image */
@@ -127,4 +160,13 @@ nav {
     left: 40px;
     bottom: 0;
     margin-bottom: 10px;
+}
+
+/* dots image  */
+
+.grid{
+    position: absolute;
+    top: 82%;
+    right: 20%;
+    overflow: hidden;
 }
