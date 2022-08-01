@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* default Code */
+/* font ko responsive bnane k lye */
+html{
+    font-size: 60%; 
+    scroll-behavior: smooth;
+}
+
+body{
+    --main-color: #283526;
+    --primary-color: #888888;
+    --button-color: #4b709e;
+    --primary-button-color: #fe7649;
+    --background-color: #E2EFFF;
+
+}
+
+h1,h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--main-color);
+}
+
+h3,h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--main-color);
+}
+
+h3{
+   text-transform: capitalize;
+   font-size: 2rem;
+}
+p, a, li,button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
+}
+p{
+    font-size: 15rem;
+
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+li{
+    list-style: none;
+}
+button{
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+/* default Code */
+
+/* Working start */
+ 
+header{
+    padding: 0 20rem;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+}
+header nav .left_side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+header nav .left_side a img{
+    width: 15rem;
+    height: 10rem;
+}
+header nav .left_side .sub_menu{
+    display: flex;
+}
+header nav .left_side .sub_menu a{
+    margin-right: 4rem;
+}
+header nav .left_side .sub_menu a li:hover{
+    color: var(--button-color);
+}
