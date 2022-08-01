@@ -15,19 +15,24 @@ header {
     background-color: #21D4FD;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     position: relative;
+    overflow: hidden;
 
 }
 /* for image */
 header:before{
     content: "";
-    width: 520px;
-    height: 550px;
+    width: 600px;
+    height: 600px;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    top: 30%;
+    right: 68%;
+
+    /* left: 0; */
+    /* bottom: 0; */
     border-radius: 550px;
     background-size: 100% 100%;
-    background-image: url('http://www.goodmorningimagesdownload.com/wp-content/uploads/2021/01/Best-Stylish-Profile-Photo-Download.jpg');
+    background-image: url('profile.jpg');
+    overflow: hidden;
 }
 
 
