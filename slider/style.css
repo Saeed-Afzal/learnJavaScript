@@ -1,0 +1,53 @@
+/* .slider{
+    overflow: hidden;
+    width: 100%;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 5s slider infinite;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.slider {
+    width: 100%;
+    height: 400px;
+    background-image: url('https://jssors8.azureedge.net/demos/image-slider/img/px-beach-daylight-fun-1430675-image.jpg');
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    animation: changeImage 5s linear infinite;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url('https://jssors8.azureedge.net/demos/image-slider/img/px-beach-daylight-fun-1430675-image.jpg');
+    }
+
+    25% {
+        background-image: url('https://jssors8.azureedge.net/demos/image-slider/img/px-fun-man-person-2361598-image.jpg');
+    }
+
+    50% {
+        background-image: url('https://jssors8.azureedge.net/demos/image-slider/img/px-beach-daylight-fun-1430675-image.jpg');
+    }
+
+    100% {
+        background-image: url('https://jssors8.azureedge.net/demos/image-slider/img/px-beach-daylight-fun-1430675-image.jpg');
+    }
+
+}
